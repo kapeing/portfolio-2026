@@ -1,0 +1,565 @@
+
+/* ========================================
+   Project Detail - Common
+======================================== */
+
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  width: 100%;
+  z-index: 100;
+  padding: 24px 40px;
+  background: rgba(247, 245, 242, 0.95);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-detail__inner {
+  width: min(
+    var(--container-width),
+    calc(100% - (var(--container-padding) * 2))
+  );
+  margin-inline: auto;
+}
+
+/* 詳細ページの見出し */
+.project-detail__split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 100px);
+  align-items: start;
+}
+
+.project-detail__split h2 {
+  color: var(--color-text);
+  font-size: var(--font-size-feature);
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.project-detail__body {
+  color: var(--color-subtext);
+  font-size: var(--font-size-base);
+  line-height: 2;
+}
+
+.project-detail__body p + p {
+  margin-top: 24px;
+}
+
+/* ========================================
+   01 Project Overview
+======================================== */
+
+.project-overview {
+  background: var(--color-bg);
+}
+
+.project-overview__title {
+  margin-top: 24px;
+  color: var(--color-text);
+  font-size: var(--font-size-section);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+
+.project-overview__subtitle {
+  margin-top: 12px;
+  color: var(--color-subtext);
+  font-family: var(--font-en);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.08em;
+}
+
+.project-overview__lead {
+  max-width: 680px;
+  margin-top: 40px;
+  color: var(--color-text);
+  font-size: var(--font-size-lead);
+  line-height: 2;
+}
+
+/* 案件情報 */
+.project-overview__meta {
+  display: grid;
+  gap: 0;
+  max-width: 780px;
+  margin-top: 64px;
+  border-top: 1px solid var(--color-border);
+}
+
+.project-overview__meta > div {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-overview__meta dt {
+  color: var(--color-subtext);
+  font-family: var(--font-en);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+.project-overview__meta dd {
+  margin: 0;
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  line-height: 1.8;
+}
+
+/* メイン画像 */
+.project-overview__visual {
+  max-width: 960px;
+  margin: 80px auto 0;
+}
+
+.project-overview__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: none;
+}
+
+.project-overview__visual figcaption {
+  margin-top: 16px;
+  color: var(--color-subtext);
+  font-size: var(--font-size-xs);
+  text-align: right;
+  line-height: 1.7;
+}
+
+/* ========================================
+   02 Background
+======================================== */
+
+.project-background {
+  background: var(--color-section-blue);
+}
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (max-width: 768px) {
+  .project-detail__split {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .project-overview__title {
+    margin-top: 16px;
+  }
+
+  .project-overview__lead {
+    margin-top: 32px;
+  }
+
+  .project-overview__meta {
+    margin-top: 48px;
+  }
+
+  .project-overview__meta > div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 16px 0;
+  }
+
+  .project-overview__visual {
+    margin-top: 56px;
+  }
+}
+
+
+/* ========================================
+   03 Design
+======================================== */
+
+.project-design {
+  background: var(--color-bg);
+}
+
+.project-design h2 {
+  max-width: 780px;
+  margin-top: 24px;
+  color: var(--color-text);
+  font-size: var(--font-size-feature);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.project-detail__intro {
+  max-width: 720px;
+  margin-top: 24px;
+  color: var(--color-subtext);
+  font-size: var(--font-size-base);
+  line-height: 2;
+}
+
+
+.project-design__feature {
+  margin-top: 64px;
+}
+
+.project-design__feature h3 {
+  color: var(--color-text);
+  font-size: var(--font-size-subtitle);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.project-design__feature > p:not(.project-design__video-caption) {
+  max-width: 720px;
+  margin-top: 16px;
+  color: var(--color-subtext);
+  font-size: var(--font-size-base);
+  line-height: 2;
+}
+
+
+.project-design__video {
+  max-width: 760px;
+  margin: 40px auto 0;
+  aspect-ratio: 16 / 9;
+}
+
+.project-design__video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+
+.project-design__video-caption {
+  max-width: 900px;
+  margin: 12px auto 0;
+  color: var(--color-subtext);
+  font-size: var(--font-size-xs);
+  text-align: right;
+}
+
+
+.project-design__template-intro {
+  margin-top: 80px;
+}
+
+.project-design__template-intro p {
+  max-width: 720px;
+  margin-top: 16px;
+  color: var(--color-subtext);
+  font-size: var(--font-size-base);
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .project-design__template-intro {
+    margin-top: 64px;
+  }
+}
+
+/* テンプレート一覧画像 */
+
+.project-design__visual {
+  max-width: 900px;
+  margin: 64px auto 0;
+}
+
+.project-design__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+/* 操作方法の検討 */
+
+.project-design h3 {
+  color: var(--color-text);
+  font-size: var(--font-size-subtitle);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.project-design__menu-study {
+  max-width: 900px;
+  margin: 80px auto 0;
+  padding: clamp(24px, 4vw, 56px);
+  background: var(--color-section-blue);
+  border-radius: 12px;
+}
+
+.project-design__menu-study-label {
+  color: var(--color-subtext);
+  font-family: var(--font-en);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+.project-design__menu-study h4 {
+  margin-top: 12px;
+  color: var(--color-text);
+  font-size: var(--font-size-subtitle);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.project-design__menu-study-intro {
+  max-width: 720px;
+  margin-top: 16px;
+  color: var(--color-subtext);
+  font-size: var(--font-size-base);
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .project-design__menu-study {
+    margin-top: 64px;
+    padding: 24px;
+  }
+}
+
+/* ホバー3案の比較画像 */
+
+
+.project-design__comparison {
+  max-width: 760px;
+  margin: 40px auto 0;
+}
+
+.project-design__comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 24px;
+  background: #e5e5e5;
+  border-radius: 12px;
+}
+
+.project-design__comparison-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+}
+
+.project-design__comparison-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .project-design__comparison {
+    max-width: 100%;
+    margin-top: 32px;
+  }
+
+  .project-design__comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 8px;
+  }
+
+  .project-design__comparison-item img {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* 画像キャプション */
+
+.project-design figcaption {
+  margin-top: 16px;
+  color: var(--color-subtext);
+  font-size: var(--font-size-xs);
+  line-height: 1.7;
+  text-align: right;
+}
+
+
+/* 3案の比較・評価 */
+
+.project-design__evaluation {
+  max-width: 760px;
+  margin: 48px auto 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.project-design__evaluation-item {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 32px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-design__evaluation-label {
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.project-design__evaluation-label strong {
+  font-weight: 700;
+}
+
+.project-design__evaluation-item p {
+  color: var(--color-subtext);
+  font-size: var(--font-size-sm);
+  line-height: 1.9;
+}
+
+.project-design__conclusion {
+  max-width: 760px;
+  margin: 32px auto 0;
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  line-height: 2;
+}
+
+/* スマートフォン */
+
+@media (max-width: 768px) {
+  .project-design__evaluation {
+    margin-top: 32px;
+  }
+
+  .project-design__evaluation-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 20px 0;
+  }
+
+  .project-design__conclusion {
+    margin-top: 24px;
+  }
+}
+
+
+/* ========================================
+   04 Implementation
+======================================== */
+
+.project-implementation {
+  background: var(--color-section-pink);
+}
+
+.project-implementation__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.project-implementation__tags li {
+  padding: 7px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text);
+  font-family: var(--font-en);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 768px) {
+  .project-implementation__tags {
+    margin-top: 32px;
+  }
+}
+
+
+/* ========================================
+   05 Result
+======================================== */
+
+.project-result {
+  background: var(--color-bg);
+}
+
+.project-result__content {
+  max-width: 760px;
+  margin-top: 24px;
+}
+
+.project-result__content h2 {
+  margin-bottom: 32px;
+  color: var(--color-text);
+  font-size: var(--font-size-feature);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.project-result__content p {
+  max-width: 680px;
+  color: var(--color-subtext);
+  font-size: var(--font-size-base);
+  line-height: 2;
+}
+
+.project-result__content p + p {
+  margin-top: 24px;
+}
+
+.project-detail__back {
+  display: inline-block;
+  margin-top: 80px;
+  color: var(--color-text);
+  font-family: var(--font-en);
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.project-detail__back:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .project-result__content h2 {
+    margin-bottom: 24px;
+  }
+
+  .project-detail__back {
+    margin-top: 56px;
+  }
+}
+
+
+/* ========================================
+   Design Responsive
+======================================== */
+
+@media (max-width: 768px) {
+  .project-design__visual {
+    margin-top: 48px;
+  }
+
+  .project-design__visual + h3 {
+    margin-top: 64px;
+  }
+
+  .project-design__points {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 64px;
+  }
+
+  .project-design__points article > span {
+    margin-bottom: 16px;
+  }
+}
+

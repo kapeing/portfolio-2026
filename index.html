@@ -1,97 +1,529 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="WEBデザイナーとして働き始めてからのかぺの作品集。">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>かぺの作品集</title>
-<link href="css/ress.css" rel="stylesheet" type="text/css">
-<link href="css/main.css" rel="stylesheet" type="text/css">
-<link rel="icon" href="img/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script>
-  (function(d) {
-    var config = {
-      kitId: 'zxq5qww',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>筈井 香 | HTML/CSS・UI実装を得意とするWeb制作者</title>
+
+  <meta
+    name="description"
+    content="HTML/CSS・UI実装を中心としたWeb制作のポートフォリオ。UI設計から実装・公開・運用までの実務実績を紹介しています。">
+
+  <meta name="theme-color" content="#202124">
+
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/main.js" defer></script>
 </head>
 
-<body id="home">
-<header>
-  <nav class="flex">
-    <h1><a href="index.html"><img src="img/index_logo01.svg" alt="かぺマーク"/>かぺの作品集</a></h1>
-    <ul class="flex">
-      <li><a href="web.html">WEB</a></li>
-      <li><a href="banner.html">バナーデザイン</a></li>
-      <li><a href="illust.html">イラスト</a></li>
-      <li><a href="dtp.html">DTP</a></li>
+<body>
+  
+<header class="header">
+  <nav class="nav" aria-label="メインナビゲーション">
+    <a class="site-title" href="./">筈井 香</a>
+
+    <button
+      class="nav__toggle"
+      type="button"
+      aria-label="メニューを開く"
+      aria-controls="nav-menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav__list" id="nav-menu">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <div class="mainVisual flex">
-    <ul>
-      <li><img src="img/index_ic01.svg" alt="フロントエンドエンジニア"/></li>
-      <li><img src="img/index_ic04.svg" alt="明るい星"/> </li>
-      <li><img src="img/index_ic06.svg" alt="暗い星"/></li>
-      <li><img src="img/index_ic06.svg" alt="暗い星"/></li>
-      <li><img src="img/index_ic03.svg" alt="夢を見る人"/></li>
-    </ul>
-    <h2>ガラパゴス<br>
-      WEB<br>
-      デザイナー<br>
-      かぺ</h2>
-  </div>
 </header>
-<div id="main">
-  <section>
-    <h3>WEB</h3>
-    <ul class="flex">
-      <li> <a href="http://www.evernew.co.jp/outdoor/madwater/index.html" target="_blank"><img src="img/index_im01.jpg" alt="マッドウォーター"/></a></li>
-      <li><a href="http://busybeaver.jp/i-zome.html" target="_blank"><img src="img/index_im02.jpg" alt="i-zome/本藍"/></a></li>
-      <li><a href="https://www.evernew.co.jp/outdoor/austrialpin/index.html" target="_blank"><img src="img/index_im03.jpg" alt="オーストリアルピン"/></a></li>
-      <li><a href="http://www.evernew.co.jp/outdoor/new/index.html" target="_blank"><img src="img/index_im04.jpg" alt="ライブラリー"/></a></li>
-    </ul>
-    <p class="btn"><a href="web.html">もっと見る</a></p>
-  </section>
-  <section>
-    <h3>バナーデザイン</h3>
-    <ul class="flex">
-      <li><img src="img/index_im05.jpg" alt="バレーボール動画"/></li>
-      <li><img src="img/index_im06.jpg" alt="運動会カタログ"/></li>
-      <li><img src="img/index_im07.jpg" alt="BusyBeaverProtean"/></li>
-      <li><img src="img/index_im08.jpg" alt="やわらかボール3個セットプレゼントキャンペーン"/></li>
-      <li><img src="img/index_im09.jpg" alt="登山グッズ特集ステッキ"/></li>
-    </ul>
-    <p class="btn"><a href="banner.html">もっと見る</a></p>
-  </section>
-  <section>
-    <h3>イラスト</h3>
-    <ul class="flex">
-<li><img src="img/illust/illust_im35.svg" alt=""/></li>
-	  <li><img src="img/illust/illust_im32.svg" alt=""/></li>
-	  <li><img src="img/illust/illust_im72.svg" alt=""/></li>
-	  <li><img src="img/illust/illust_im96.svg" alt=""/></li>
-	  <li><img src="img/illust/illust_im70.svg" alt=""/></li>
-	  <li><img src="img/illust/illust_im03.svg" alt=""/></li>
-</ul>
-<p class="btn"><a href="illust.html">もっと見る</a></p>
-  </section>
-  <section>
-    <h3>DTP</h3>
-    <ul class="flex">
-<li><img src="img/index_im10.jpg" alt="製品対応一覧表"/></li>
-	  <li><img src="img/index_im11.jpg" alt="ウチダスチラシ"/></li>
-	  <li><img src="img/index_im12.jpg" alt="英文カタログ"/></li>
-	  <li><img src="img/index_im13.jpg" alt="キッズカタログ"/></li>
-</ul>
-<p class="btn"><a href="dtp.html">もっと見る</a></p>
-  </section>
-</div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-wave-mask">
+        <!-- Page Wave -->
+        <div class="page-wave" aria-hidden="true">
+          <svg
+            viewBox="0 0 400 3000"
+            preserveAspectRatio="none"
+          >
+            <defs>
+              <linearGradient
+                id="wave-fill"
+                x1="0"
+                y1="0"
+                x2="1"
+                y2="1"
+              >
+                <stop offset="0%" stop-color="#d8e9f5" />
+                <stop offset="28%" stop-color="#eadcf2" />
+                <stop offset="55%" stop-color="#f7d9e3" />
+                <stop offset="78%" stop-color="#dce8f5" />
+                <stop offset="100%" stop-color="#fff0cf" />
+              </linearGradient>
+            </defs>
+
+            <g class="wave-flow">
+              <path
+                d="
+                  M 0 -3000
+                  L 260 -3000
+                  C 340 -2850, 300 -2720, 150 -2570
+                  C 30 -2440, 70 -2280, 230 -2120
+                  C 350 -1980, 310 -1820, 140 -1660
+                  C 20 -1520, 70 -1340, 240 -1190
+                  C 350 -1040, 300 -860, 130 -690
+                  C 20 -530, 80 -300, 260 0
+
+                  C 340 150, 300 280, 150 430
+                  C 30 560, 70 720, 230 880
+                  C 350 1020, 310 1180, 140 1340
+                  C 20 1480, 70 1660, 240 1810
+                  C 350 1960, 300 2140, 130 2310
+                  C 20 2470, 80 2700, 260 3000
+
+                  L 0 3000
+                  Z
+                "
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="hero__label">PORTFOLIO</p>
+
+          <h1 class="hero__title">
+            HTML/CSS・UI実装を得意とする<br>
+            Web制作者
+          </h1>
+
+          <p class="hero__description">
+            デザインの意図をくみ取り、
+            使いやすいUIを実装する。<br>
+            制作から公開・運用まで。
+          </p>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <span class="blob blob--blue"></span>
+          <span class="blob blob--pink"></span>
+          <span class="blob blob--grayblue"></span>
+          <span class="blob blob--cream"></span>
+        </div>
+      </div>
+    </section>
+    <div class="page">
+      <!-- Featured Project
+      ======================================== -->
+      <section class="featured-project section" id="projects">
+        <div class="featured-project__inner">
+
+          <header class="featured-project__header">
+            <p class="section-label">
+              <span>01</span>
+              FEATURED PROJECT
+            </p>
+
+            <h2 class="featured-project__title">
+              HTMLメール<br class="sp-only">エディタ
+            </h2>
+
+            <p class="featured-project__name">
+              Mail Publisher HTML editor
+            </p>
+
+            <p class="featured-project__description">
+              HTMLの知識がないユーザーでも、<br>
+              直感的にメールを作成できるエディタの<br>
+              UIデザイン・実装を担当しました。
+            </p>
+
+            <ul class="featured-project__tags">
+              <li>UI DESIGN</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Vue.js</li>
+            </ul>
+          </header>
+
+
+          <div class="featured-project__visual">
+            <div class="featured-project__image-wrap">
+              <img
+                src="img/mail-publisher-main.png"
+                alt="Mail Publisher HTML editor メーリング一覧画面"
+                class="featured-project__image"
+              >
+            </div>
+          </div>
+
+
+          <div class="featured-project__footer">
+            <!-- ↓ ケーススタディページのURLに変更 -->
+            <a
+              href="projects/mail-publisher.html"
+              class="featured-project__link"
+            >
+              <span>View Project</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Other Projects
+      ======================================== -->
+      <section class="other-projects section">
+        <div class="other-projects__inner">
+
+          <header class="other-projects__header">
+            <p class="section-label">
+              <span>02</span>
+              OTHER PROJECTS
+            </p>
+
+            <h2 class="other-projects__heading">
+              その他の実績
+            </h2>
+          </header>
+
+
+          <div class="other-projects__grid">
+
+            <!-- HANOWA -->
+            <article class="project-card">
+
+              <a href="#" class="project-card__image-link">
+                <div class="project-card__image-wrap">
+                  <img
+                    src="img/project-hanowa.png"
+                    alt="HANOWA 制作画面"
+                    class="project-card__image"
+                  >
+                </div>
+              </a>
+
+              <div class="project-card__body">
+
+                <p class="project-card__type">
+                  WEB APPLICATION
+                </p>
+
+                <h3 class="project-card__title">
+                  HANOWA
+                </h3>
+
+                <p class="project-card__description">
+                  歯科医療従事者向けマッチングサービス。
+                  Figmaをもとに、新規・既存画面のUI実装を担当しました。
+                </p>
+
+                <ul class="project-card__tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Vue.js</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+            </article>
+
+
+            <!-- にこすぽ -->
+            <article class="project-card">
+
+              <a href="#" class="project-card__image-link">
+                <div class="project-card__image-wrap">
+                  <img
+                    src="img/project-nikospo.png"
+                    alt="にこすぽ ランディングページ"
+                    class="project-card__image"
+                  >
+                </div>
+              </a>
+
+              <div class="project-card__body">
+
+                <p class="project-card__type">
+                  LANDING PAGE
+                </p>
+
+                <h3 class="project-card__title">
+                  にこすぽ
+                </h3>
+
+                <p class="project-card__description">
+                  教育サービスのランディングページ。
+                  構成・デザインからHTML/CSS実装、公開まで一貫して担当しました。
+                </p>
+
+                <ul class="project-card__tags">
+                  <li>DESIGN</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Illustrator</li>
+                </ul>
+              </div>
+            </article>
+
+
+            <!-- 非公開案件 -->
+            <article class="project-card">
+
+              <a href="#" class="project-card__image-link">
+                <div class="project-card__image-wrap">
+                  <img
+                    src="img/project-l.png"
+                    alt="非公開案件 制作実績"
+                    class="project-card__image"
+                  >
+                </div>
+              </a>
+
+              <div class="project-card__body">
+
+                <p class="project-card__type">
+                  WEB DEVELOPMENT
+                </p>
+
+                <h3 class="project-card__title">
+                  非公開案件
+                </h3>
+
+                <p class="project-card__description">
+                  企画LPや既存サイトの新規ページ制作など、
+                  継続的なWeb制作・運用を担当しました。
+                </p>
+
+                <ul class="project-card__tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>PHP</li>
+                  <li>API</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>      
+
+      <!-- About
+      ======================================== -->
+      <section class="about section" id="about">
+        <div class="about__inner">
+
+          <div class="about__heading">
+            <p class="section-label">
+              <span>03</span>
+              ABOUT
+            </p>
+            <h2 class="about__title">
+              意図をくみ取り、<br>
+              使いやすいUIをかたちに。
+            </h2>
+
+          </div>
+
+          <div class="about__content">
+            <div class="about__text">
+              <p>
+                Webデザイン、コーディング、フロントエンド開発の
+                実務を経験してきました。
+                特にHTML/CSSによるUI実装を得意としています。
+              </p>
+
+              <p>
+                デザインデータを再現するだけでなく、
+                情報の優先順位や操作性を考えながら、
+                公開後の更新・運用まで見据えて実装します。
+              </p>
+            </div>
+
+        </div>
+      </section>
+
+      <!-- Skills
+      ======================================== -->
+      <section class="skills section" id="skills">
+        <div class="skills__inner">
+
+          <header class="skills__header">
+            <p class="section-label">
+              <span>04</span>
+              SKILLS
+            </p>
+            <h2 class="skills__title">できること</h2>
+          </header>
+
+          <div class="skills__main">
+
+            <!-- HTML / CSS -->
+            <article class="skill-feature">
+              <div class="skill-feature__number">01</div>
+
+              <div class="skill-feature__heading">
+                <h3>HTML / CSS実装</h3>
+                <p class="skill-feature__catch">
+                  デザインを、精度高くWeb上に再現する。
+                </p>
+              </div>
+
+              <div class="skill-feature__content">
+                <p>
+                  デザインの意図をくみ取りながら、レスポンシブ対応や
+                  既存ページの改修、CSSアニメーションなどを実装。
+                  見た目だけでなく、保守性も意識してコーディングします。
+                </p>
+
+                <ul class="skill-tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Sass</li>
+                  <li>Responsive</li>
+                  <li>CSS Animation</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- UI実装 -->
+            <article class="skill-feature">
+              <div class="skill-feature__number">02</div>
+
+              <div class="skill-feature__heading">
+                <h3>UI実装</h3>
+                <p class="skill-feature__catch">
+                  デザインデータを、実際に使える画面へ。
+                </p>
+              </div>
+
+              <div class="skill-feature__content">
+                <p>
+                  Figma・Adobe XDなどのデザインデータをもとに、
+                  画面やUIコンポーネントを実装。
+                  Vue.jsを使用した新規画面・既存画面の
+                  実装・改修経験があります。
+                </p>
+
+                <ul class="skill-tags">
+                  <li>Figma</li>
+                  <li>Adobe XD</li>
+                  <li>Vue.js</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Other Skills -->
+          <div class="skills__other">
+            <div class="skills__other-heading">
+              <p class="section-label">
+                <span>05</span>
+                OTHER SKILLS
+              </p>
+              <h3>そのほか対応できること</h3>
+            </div>
+
+            <div class="skills__other-list">
+
+              <article class="skill-other">
+                <span class="skill-other__number">01</span>
+                <h4>UI・Webデザイン</h4>
+                <p>
+                  画面構成、ワイヤーフレーム、UIデザイン、
+                  Webサイト・LPのデザイン。
+                </p>
+                <p class="skill-other__tools">
+                  Figma / Photoshop / Illustrator
+                </p>
+              </article>
+
+              <article class="skill-other">
+                <span class="skill-other__number">02</span>
+                <h4>開発・連携</h4>
+                <p>
+                  Gitを使った開発フロー、API仕様の確認、
+                  PHPを使用した既存システムの改修。
+                </p>
+                <p class="skill-other__tools">
+                  Git / PHP / API
+                </p>
+              </article>
+
+              <article class="skill-other">
+                <span class="skill-other__number">03</span>
+                <h4>更新・運用</h4>
+                <p>
+                  ページ追加・更新、既存サイトの改修、
+                  QA、本番リリース、公開後の継続運用。
+                </p>
+                <p class="skill-other__tools">
+                  Update / QA / Release
+                </p>
+              </article>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Contact
+      ======================================== -->
+      <section class="contact section" id="contact">
+        <div class="contact__inner">
+          <p class="section-label">
+            <span>06</span>
+            CONTACT
+          </p>
+          <div class="contact__content">
+            <div class="contact__heading">
+              <h2>お気軽にご連絡ください。</h2>
+            </div>
+
+            <div class="contact__body">
+              <p>
+                Web制作、UI実装、更新・運用などについて<br>
+                ご相談いただけます。
+              </p>
+
+              <a
+                href="mailto:kaori.hazui@gmail.com"
+                class="contact__link"
+              >
+                <span>メールで問い合わせる</span>
+                <span class="contact__arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- Footer
+  ======================================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__name">筈井 香</p>
+
+      <p class="footer__copyright">
+        © 2026 Kaori Hazui
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

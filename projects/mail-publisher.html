@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTMLメールエディタのUI設計・実装事例。筈井 香の制作実績。">
+
+  <title>HTMLメールエディタ | 筈井 香</title>
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/project-detail.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="../index.html" class="site-title">筈井 香</a>
+
+      <nav class="nav" aria-label="メインナビゲーション">
+        <ul class="nav__list">
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#skills">Skills</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 01 Overview -->
+    <section class="project-overview section">
+      <div class="project-detail__inner">
+
+        <p class="section-label">01 / PROJECT OVERVIEW</p>
+
+        <h1 class="project-overview__title">
+					HTMLメール<br class="sp-only">エディタ
+				</h1>
+
+        <p class="project-overview__subtitle">
+          Mail Publisher HTML editor
+        </p>
+
+        <p class="project-overview__lead">
+          HTMLの知識がなくても直感的にメールを作成できる、
+          HTMLメールエディタのUIデザインと
+          フロントエンド実装の一部を担当しました。
+        </p>
+
+        <dl class="project-overview__meta">
+          <div>
+            <dt>ROLE</dt>
+            <dd>UI Design / Front-end Development</dd>
+          </div>
+          <div>
+            <dt>TECHNOLOGY</dt>
+            <dd>HTML / CSS / Vue.js / PHP (Phalcon)</dd>
+          </div>
+          <div>
+            <dt>TEAM</dt>
+            <dd>チーム開発</dd>
+          </div>
+        </dl>
+
+        <figure class="project-overview__visual">
+          <img
+            src="../img/mail-publisher-editor.png"
+            alt="Mail PublisherのHTMLメール編集画面"
+          >
+          <figcaption>
+            メール編集画面（公式製品紹介画像）
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- 02 Background -->
+    <section class="project-background section">
+      <div class="project-detail__inner">
+
+        <p class="section-label">02 / BACKGROUND</p>
+
+        <div class="project-detail__split">
+          <h2>
+            使いにくかった既存エディタを、<br>
+            直感的に使えるUIへ。
+          </h2>
+
+          <div class="project-detail__body">
+            <p>
+              既存のエディタは編集の自由度が低く、
+              HTMLの知識がないユーザーにとって
+              扱いづらいことが課題でした。
+            </p>
+            <p>
+              そこで、専門知識がなくても
+              メールを作成できるよう、
+              直感的な操作を重視したUIへ刷新しました。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 03 Design -->
+    <section class="project-design section">
+      <div class="project-detail__inner">
+
+        <p class="section-label">03 / DESIGN</p>
+
+        <h2>迷わず操作できる、見慣れたUIを目指して。</h2>
+
+        <p class="project-detail__intro">
+          既存サービスの操作性を改善するため、ユーザーが直感的に使えるUIを目指しました。<br>
+          一般的なメール作成ツールの操作感を参考に、機能の見つけやすさと使いやすさを意識して設計しました。
+        </p>
+
+        <div class="project-design__feature">
+          <h3>ドラッグ＆ドロップで、直感的にメールを作成</h3>
+
+          <p>
+            テキストや画像などのパーツをカード形式で一覧表示し、
+            ドラッグ＆ドロップで配置できるUIを設計しました。
+            HTMLを直接編集する必要がなく、
+            必要なパーツを選んで組み合わせることで、
+            専門知識のないユーザーでも視覚的にメールを作成できるようにしました。
+          </p>
+
+          <div class="project-design__video">
+            <iframe
+              src="https://www.youtube.com/embed/XywtaGYGWQ4?start=23&amp;end=35"
+              title="Mail Publisher HTMLメールエディタの操作動画"
+              loading="lazy"
+              allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <p class="project-design__video-caption">
+            出典：Mail Publisher 公式紹介動画（0:23〜0:35）
+          </p>
+        </div>
+
+        <div class="project-design__template-intro">
+          <h3>テンプレートを選び、すぐに編集を開始できるUI</h3>
+
+          <p>
+            テンプレート一覧では、各カードにカーソルを合わせることで
+            操作メニューを表示するUIを設計しました。
+            編集やプレビューなど、目的の操作へ直接アクセスできるようにしました。
+          </p>
+        </div>
+
+        <figure class="project-design__visual">
+          <img
+            src="../img/mail-publisher-list.png"
+            alt="Mail Publisherのテンプレート一覧画面を再構成した画像"
+          >
+          <figcaption>
+            テンプレート一覧（当時の設計をもとに再構成）
+          </figcaption>
+        </figure>
+
+        <div class="project-design__menu-study">
+          <p class="project-design__menu-study-label">
+            DESIGN PROCESS
+          </p>
+
+          <h4>ホバーメニューの比較検討</h4>
+
+          <p class="project-design__menu-study-intro">
+            操作のわかりやすさとアクセスのしやすさを両立するため、
+            ホバー時の操作メニューについて3つのデザイン案を比較検討しました。
+          </p>
+
+					<figure class="project-design__comparison">
+						<div class="project-design__comparison-grid">
+							<div class="project-design__comparison-item">
+								<img
+									src="../img/mail-publisher-hover-a.png"
+									alt="A案：アイコンとテキストを組み合わせた操作メニュー"
+								>
+							</div>
+
+							<div class="project-design__comparison-item">
+								<img
+									src="../img/mail-publisher-hover-b.png"
+									alt="B案：アイコンのみの操作メニュー"
+								>
+							</div>
+
+							<div class="project-design__comparison-item">
+								<img
+									src="../img/mail-publisher-hover-c.png"
+									alt="C案：メニューを開いて操作する形式"
+								>
+							</div>
+						</div>
+
+						<figcaption>
+							ホバー時の操作メニュー3案
+							（当時の検討内容をもとに再構成）
+						</figcaption>
+					</figure>
+
+          <div class="project-design__evaluation">
+            <div class="project-design__evaluation-item">
+              <span class="project-design__evaluation-label">
+                A案｜アイコン＋テキスト（<strong>採用</strong>）
+              </span>
+              <p>
+                操作内容がひと目でわかり、
+                各機能に直接アクセスできる。
+              </p>
+            </div>
+
+            <div class="project-design__evaluation-item">
+              <span class="project-design__evaluation-label">
+                B案｜アイコンのみ
+              </span>
+              <p>
+                見た目はすっきりするものの、
+                アイコンの意味を理解するまでに一瞬考える必要がある。
+              </p>
+            </div>
+
+            <div class="project-design__evaluation-item">
+              <span class="project-design__evaluation-label">
+                C案｜メニュー形式
+              </span>
+              <p>
+                表示する操作を絞れる一方、
+                メニューを開くためのクリックが増える。
+              </p>
+            </div>
+          </div>
+
+          <p class="project-design__conclusion">
+            操作のわかりやすさとクリック数のバランスから、A案を採用しました。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 04 Implementation -->
+    <section class="project-implementation section">
+      <div class="project-detail__inner">
+        <p class="section-label">04 / IMPLEMENTATION</p>
+
+        <div class="project-detail__split">
+          <h2>UIデザインから、<br>画面実装まで。</h2>
+
+          <div class="project-detail__body">
+            <p>
+              Adobe XDでの画面設計・プロトタイプ制作に加え、
+              HTML/CSSやVue.jsを用いた一部画面のUI実装も担当しました。
+            </p>
+
+            <p>
+              開発メンバーと連携しながら、
+              デザインで意図したレイアウトや操作性を
+              実際の画面に反映しました。
+            </p>
+
+            <ul class="project-implementation__tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Vue.js</li>
+              <li>Adobe XD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 Result -->
+    <section class="project-result section">
+      <div class="project-detail__inner">
+        <p class="section-label">05 / RESULT</p>
+
+        <div class="project-result__content">
+          <h2>専門知識がなくても、<br>使いやすい編集画面へ。</h2>
+
+          <p>
+            従来のエディタが抱えていた操作性の課題に対し、
+            見慣れたUIや直感的な操作方法を取り入れた編集画面を制作しました。
+          </p>
+
+          <p>
+            画面設計から一部の実装まで携わり、
+            HTMLの知識がないユーザーでもメールを作成しやすいUIの実現に取り組みました。
+          </p>
+        </div>
+
+        <a href="../index.html#projects" class="project-detail__back">
+          ← Back to Projects
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__name">筈井 香</p>
+      <small class="footer__copyright">
+        &copy; 2026 Kaori Hazui
+      </small>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
